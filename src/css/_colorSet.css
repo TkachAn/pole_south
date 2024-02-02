@@ -1,0 +1,42 @@
+#root {
+  --colWrap: #0060a0;
+  --colH1: #c0d8e8;
+  --colH2: #a0c4dc;
+  --colH3: #90b8dc;
+  --colH4: #80a4dc;
+	--colH5: #60a4dc;
+  --colPLight: #c0d8e8;
+  --colPDark: #007cc0;
+  --colBg: rgba(0, 96, 160, 0.99);
+  --colBg1: rgba(0, 152, 240, 0.39);
+	color: var(--colBg);
+}
+p{
+	color: var(--colDark);
+}
+h1{
+	color: var(--colH1);
+}
+h2{
+	color: var(--colH2);
+}
+h3{
+	color: var(--colH3);
+}
+h4{
+	color: var(--colH4);
+}
+h5{
+	color: var(--colH5);
+}
+@property --colWrap {
+  inherits: false;
+  syntax: '<color>';
+  initial-value: #0060a0;
+}
+@color-profile --swop5c {
+  src: url("https://example.org/SWOP2006_Coated5v2.icc");
+}
+.header {
+  background-color: color(--swop5c 0% 70% 20% 0%);
+}
