@@ -8,7 +8,7 @@ import { ContactMap } from "./contacts/contacts";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<LayOut/>}>
+      <Route path="/pole_south" element={<LayOut/>}>
 				<Route index element={<Home/>}/>
 				<Route path="/contacts" element={<ContactMap />} />
 				<Route path="*" element={<NotFound/>}/>
