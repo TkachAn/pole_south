@@ -6,4 +6,5 @@
 .main {
   flex-grow: 1;
 	padding: 8.0rem 0 0 0;
+	height: 100%;
 }
