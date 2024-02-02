@@ -1,0 +1,33 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.text {
+  width: 100%;
+  min-width: 28rem;
+  max-width: 30rem;
+  padding: 0.5rem 1.5rem;
+  text-align: left;
+	font-size: 1.6rem;
+	border-radius: 0.5rem;
+	border: 0.2rem solid #9d9d9d;
+}
+.diva {
+  float: left;
+  width: clamp(100px, 64.8px + 11vw, 200px);
+  height: 50px;
+  margin-right: 10px;
+  clip-path: polygon(0px 50px, 15px 0px, 150px 50px);
+  /* shape-outside: polygon(0px 45px, 10px 0px, 145px 50px); */
+  background-color: color-mix(in srgb, #0096ba, white);
+  transition: background-color 0.3s ease;
+}
+.diva:hover {
+  width: 150px;
+  height: 150px;
+  background-color: color-mix(in srgb, #0096ba 70%, white);
+}
