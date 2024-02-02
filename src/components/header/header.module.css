@@ -25,17 +25,15 @@
   padding: 0 1.5rem;
 	align-items: center;
 }
-.section_logo {
-	/* display: none; */
-}
+
 .logo{
 	/* position: absolute;
 	top: 2.5rem;
 	left: 2.0rem; */
-	vertical-align:bottom;
+	/* vertical-align:bottom;
 	align-items: center;
 	align-content: center;
-	align-self: center;
+	align-self: center; */
 }
 
 .burger{
@@ -98,9 +96,8 @@
 	}
 	.section_logo {
 		width: 100%;
-
-		min-width: 14.1rem;
-		max-width: 1rem;
+		/* min-width: 14.1rem; */
+		/* max-width: 1rem; */
 	}
 	.burger{
 		opacity: 0;
