@@ -6,7 +6,7 @@ export const Footer = () => {
       <div className="container">
         <div className={s.flex}>
           <section className={s.address}>
-            <h2>наші контакти</h2>
+            <h2 className={s.title}>наші контакти</h2>
             <div className={s.content}>
 							<p className={s.text_left}>наша адреса</p>
               <p className={s.text}> 12<sup className={s.downIndex}>та</sup> Поздовжня, 63, Миколаїв</p>
@@ -19,14 +19,14 @@ export const Footer = () => {
             </div>
           </section>
           <section className={s.socials}>
-            <h2>Приєднуйтесь до нас</h2>
+            <h2 className={s.title}>Приєднуйтесь до нас</h2>
             <div className={s.content}>
 							<hr/><br/>
               <ul className={s.flexSocial}>
                 <li>
                   <a href="https://about.instagram.com/">
                     <svg className={s.instagram}>
-										<use href="./icon/defs.svg#s-instagram"></use>
+										<use href="./icons/defs.svg#s-instagram"></use>
                     </svg>
                   </a>
                 </li>
@@ -58,7 +58,7 @@ export const Footer = () => {
             </div>
           </section>
           <section className={s.subscription}>
-            <h2>subscription</h2>
+            <h2 className={s.title}>subscription</h2>
             <form className={s.content}>
 						<div className={s.flexSub}>
 
