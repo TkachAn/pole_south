@@ -17,15 +17,15 @@ font-size: 80px;
   width: 100%;
   min-height: 100%;
 }
-.container {
-  width: 640px;
-  margin: 0 auto;
-  height: 100%;
-}
+
 .stub{
+	margin: 2rem 0;
 	width: 100%;
-	min-height: 10rem;
-	background-color: 000;
+	min-height: 25rem;
+	background-color: #000;
+	background-image: url("https://images2.imgbox.com/1b/42/QU5IKszL_o.png");
+	background-size: cover;
+	background-position: 50% 55%;
 }
 .section {
   /* height: 100%; */
