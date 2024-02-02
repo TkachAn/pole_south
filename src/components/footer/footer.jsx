@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import s from "./footer.module.css";
 
 export const Footer = () => {
@@ -24,35 +25,35 @@ export const Footer = () => {
 							<hr/><br/>
               <ul className={s.flexSocial}>
                 <li>
-                  <a href="https://about.instagram.com/">
+                  <Link to="https://about.instagram.com/">
                     <svg className={s.instagram}>
 										<use href="./icons/defs.svg#s-instagram"></use>
                     </svg>
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a href="https://twitter.com/">
+                  <Link to="https://twitter.com/">
                     <svg className={s.twitter}>
-                      <use href="./icon/defs.svg#s-twitter"></use>
+                      <use href="./icons/defs.svg#s-twitter"></use>
                     </svg>
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a href="https://www.facebook.com/">
+                  <Link to="https://www.facebook.com/">
                     <svg className={s.facebook}>
-                      <use href="./icon/defs.svg#s-facebook"></use>
+                      <use href="./icons/defs.svg#s-facebook"></use>
                     </svg>
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a href="https://www.linkedin.com/">
+                  <Link to="https://www.linkedin.com/">
                     <svg className={s.linkedin}>
-                      <use href="./icon/defs.svg#s-linkedin"></use>
+                      <use href="./icons/defs.svg#s-linkedin"></use>
                     </svg>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
