@@ -1,5 +1,5 @@
 .wrapper{
-	background-color: cadetblue;
+	background-color:var(--colWrap);
 }
 
 /* .flex{
@@ -32,7 +32,7 @@
 	grid-template-areas: 
 	'address . subscription . .' '. socials . . .';
 	}
-	@media (min-width:967px) {
+	@media (min-width:1080px) {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
@@ -56,7 +56,9 @@
 		max-width: 295px;
 	} */
 }
-
+.title{
+font-size: 1.5rem;
+}
 .text_left{
 	/* font-family: Roboto, sans-serif; */
 	font-weight: 300;
@@ -64,7 +66,7 @@
 }
 .text{
 	text-align: right;
-	font-weight: 500;
+	font-weight: 300;
 }
 
 .content{
@@ -77,10 +79,10 @@
 .instagram{
 	position: relative;
 	display: inline-block;
-	width: 55px;
-  height: 55px;
+	width: 44px;
+  height: 44px;
   border-radius: 50%;
-  background-color: #333;
+  background-color:var(--colBg1);
 	fill: white;
 	transition: background-color 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -91,8 +93,8 @@
 	.facebook:hover,
 	.instagram:hover{
 		cursor: pointer;
-		background-color: antiquewhite;
-		fill: aqua;
+		background-color: var(--colH5);
+		fill: var(--colH1);
 	}
 	
 }
@@ -112,13 +114,34 @@
 	gap: 0.5rem;
 }
 .name, .email{
+	background-color: var(--colBg1);
+	border: none;
+	border-radius: 20px;
+	padding-left: 1.5rem;
+	color: #fff;
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+  transition: background-color 1250ms cubic-bezier(0.4, 0, 0.1, 1),
+    color 1550ms cubic-bezier(0.2, 0, 0.2, 1);
 	height: 3.0rem;
 	/* align-self:self-start; */
 }
+.name:hover, .email:hover{
+	background-color: var(--colH5);
+}
 .btnSubmit{
+	color: var(--colH1);
 	margin-top: 0.6rem;
 	cursor: pointer;
 	align-self: center;
 	width:60%;
 	height: 3.0rem;
+	border: none;
+	border-radius: 20px;
+	background-color: var(--colH5);
+	filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+	transition: background-color 1250ms cubic-bezier(0.4, 0, 0.1, 1),
+	color 1550ms cubic-bezier(0.2, 0, 0.2, 1);
+}
+.btnSubmit:hover{
+	background-color: var(--colBg1);
 }
