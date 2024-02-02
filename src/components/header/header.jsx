@@ -8,7 +8,7 @@ export const Header = () => {
       <div className="container">
         <div className={s.flex}>
           <section className={s.section_logo}>
-            <div className={s.logo}>polus yug</div>
+            <div className={s.logo}><h3>polus yug</h3></div>
           </section>
           <section className={s.section}>
 						<button className={s.burger} onClick={() => setOpen(!isOpen)}>

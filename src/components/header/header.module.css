@@ -2,7 +2,7 @@
   width: 100%;
   height: 6rem;
   background-color: cadetblue;
-  padding: 2rem 0;
+  vertical-align:bottom;
   position: fixed;
 }
 /* .wrapper::before {
@@ -17,18 +17,25 @@
 	
 } */
 .flex {
+	height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content:space-between;
   gap: 1rem;
   padding: 0 1.5rem;
-	align-self: center;
+	align-items: center;
 }
-
+.section_logo {
+	/* display: none; */
+}
 .logo{
 	/* position: absolute;
 	top: 2.5rem;
 	left: 2.0rem; */
+	vertical-align:bottom;
+	align-items: center;
+	align-content: center;
+	align-self: center;
 }
 
 .burger{
@@ -76,22 +83,21 @@
   transition: 0.4s;
 	
 }
-.section_logo {
-	/* display: none; */
-}
+
 @media (min-width: 640px) {
 	
 	.flexNav {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;
+		justify-content:space-between;
 		gap: 1rem;
 		font-size: 1.2rem;
 		text-transform: uppercase;
-		align-items: center;
+		
 	}
 	.section_logo {
 		width: 100%;
+
 		min-width: 14.1rem;
 		max-width: 1rem;
 	}
@@ -100,7 +106,8 @@
 	}
 }
 .nav_item{
-	padding: 0.9rem;
+
+	/* padding: 0.9rem; */
 }
 .burger_nav{
 	display: block;
