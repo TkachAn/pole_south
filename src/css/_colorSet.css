@@ -29,14 +29,8 @@ h4{
 h5{
 	color: var(--colH5);
 }
-@property --colWrap {
+/* @property --colWrap {
   inherits: false;
   syntax: '<color>';
   initial-value: #0060a0;
-}
-@color-profile --swop5c {
-  src: url("https://example.org/SWOP2006_Coated5v2.icc");
-}
-.header {
-  background-color: color(--swop5c 0% 70% 20% 0%);
-}
+} */
