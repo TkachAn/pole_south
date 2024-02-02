@@ -22,7 +22,7 @@
 	/* max-width: 100rem; */
 	display: block;
 	grid-template-columns: repeat(1, 280px);
-	gap: 10px;
+	gap: 40px;
 	grid-template-areas: 'address' 'socials' 'subscription';
 
 	@media (min-width: 640px) {
