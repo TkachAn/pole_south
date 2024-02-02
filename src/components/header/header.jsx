@@ -22,19 +22,19 @@ export const Header = () => {
             <nav className={s.navigation}>
               <ul className={isOpen ? s.burger_nav : s.flexNav}>
                 <li className={s.nav_item}>
-                  <NavLink to="/">home</NavLink>
+                  <NavLink className={s.NavLink} to="/">home</NavLink>
                 </li>
                 <li className={s.nav_item}>
-                  <NavLink to="/products">products</NavLink>
+                  <NavLink className={s.NavLink} to="/products">products</NavLink>
                 </li>
                 <li className={s.nav_item}>
-                  <NavLink to="/downloads">downloads</NavLink>
+                  <NavLink className={s.NavLink}  to="/downloads">downloads</NavLink>
                 </li>
                 <li className={s.nav_item}>
-                  <NavLink to="/about">abuot us</NavLink>
+                  <NavLink className={s.NavLink}  to="/about">abuot us</NavLink>
                 </li>
                 <li className={s.nav_item}>
-                  <NavLink to="/contacts">contacts</NavLink>
+                  <NavLink className={s.NavLink}  to="/contacts">contacts</NavLink>
                 </li>
               </ul>
             </nav>

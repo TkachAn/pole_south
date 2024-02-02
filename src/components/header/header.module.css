@@ -106,9 +106,31 @@
 		opacity: 0;
 	}
 }
-.nav_item{
+.nav_item NavLink{
 
+color: #fff;
 	/* padding: 0.9rem; */
+}
+.NavLink{
+	display: block;
+  min-width: 5.1rem;
+  padding: 0 0.4rem;
+  align-content: center;
+	text-transform: uppercase;
+	font-family: Tomorrow, sans-serif;
+  /* font-size: 1.5rem; */
+  font-weight: 300;
+  text-decoration:none;
+  color: var(--p-color);
+  transition: 0.5s;
+
+  &:hover {
+		
+    transform: scale(1.1);
+    /* border-width: 2px; */
+		font-weight: 600;
+    color: var(--headerg1-color);
+  }
 }
 .burger_nav{
 	display: block;
