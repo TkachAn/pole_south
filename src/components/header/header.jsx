@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { Link, NavLink } from "react-router-dom";
 import s from "./header.module.css";
 
 export const Header = () => {
@@ -7,9 +8,11 @@ export const Header = () => {
     <header className={s.wrapper}>
       <div className="container">
         <div className={s.flex}>
-          <section className={s.section_logo}>
-            <div className={s.logo}><h3>polus yug</h3></div>
-          </section>
+          <Link to="/" end className={s.section_logo}>
+            {/* <div className={s.logo}> */}
+						<h3>Полюс Юг</h3>
+						{/* </div> */}
+          </Link>
           <section className={s.section}>
 						<button className={s.burger} onClick={() => setOpen(!isOpen)}>
 							<div className={s.bar2}></div>
@@ -19,19 +22,19 @@ export const Header = () => {
             <nav className={s.navigation}>
               <ul className={isOpen ? s.burger_nav : s.flexNav}>
                 <li className={s.nav_item}>
-                  <a href="/">home</a>
+                  <NavLink to="/">home</NavLink>
                 </li>
                 <li className={s.nav_item}>
-                  <a href="/products">products</a>
+                  <NavLink to="/products">products</NavLink>
                 </li>
                 <li className={s.nav_item}>
-                  <a href="/downloads">downloads</a>
+                  <NavLink to="/downloads">downloads</NavLink>
                 </li>
                 <li className={s.nav_item}>
-                  <a href="/about">abuot us</a>
+                  <NavLink to="/about">abuot us</NavLink>
                 </li>
                 <li className={s.nav_item}>
-                  <a href="/contacts">contacts</a>
+                  <NavLink to="/contacts">contacts</NavLink>
                 </li>
               </ul>
             </nav>
