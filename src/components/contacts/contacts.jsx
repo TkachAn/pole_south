@@ -11,7 +11,7 @@ export const ContactMap = () => {
         <ul className={s.list}>
           <li className={s.feature}>
             <h2 className={s.titleGrup}>Наши контакти</h2>
-            <br />
+            <br /><br />
 
             <ul className={s.p_flex}>
               <li className={s.p_start}>мобільний Марини:</li>
@@ -50,7 +50,7 @@ export const ContactMap = () => {
           <li className={s.feature}>
             <h2 className={s.titleGrup}>Наша адреса</h2>
             <br />
-
+						<br />
             <ul className={s.p_flex}>
               <li itemprop="streetAddress">вулиця:</li>
               <li>12-та Поздовжня,  63</li>
