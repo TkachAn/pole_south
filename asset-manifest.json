@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/pole_south/static/css/main.b407c880.css",
-    "main.js": "/pole_south/static/js/main.f52f98a0.js",
+    "main.js": "/pole_south/static/js/main.888b9361.js",
     "index.html": "/pole_south/index.html",
     "main.b407c880.css.map": "/pole_south/static/css/main.b407c880.css.map",
-    "main.f52f98a0.js.map": "/pole_south/static/js/main.f52f98a0.js.map"
+    "main.888b9361.js.map": "/pole_south/static/js/main.888b9361.js.map"
   },
   "entrypoints": [
     "static/css/main.b407c880.css",
-    "static/js/main.f52f98a0.js"
+    "static/js/main.888b9361.js"
   ]
 }
