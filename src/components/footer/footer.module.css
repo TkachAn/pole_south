@@ -1,0 +1,124 @@
+.wrapper{
+	background-color: cadetblue;
+}
+
+/* .flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1.0rem;
+	padding: 20px 15px 40px;
+} */
+.address{
+	grid-area: address;
+}
+.socials{
+	grid-area: socials;
+}
+.subscription{
+	grid-area: subscription;
+}
+.flex{
+	/* max-width: 100rem; */
+	display: block;
+	grid-template-columns: repeat(1, 280px);
+	gap: 10px;
+	grid-template-areas: 'address' 'socials' 'subscription';
+
+	@media (min-width: 640px) {
+		display: grid;
+		grid-template-columns: repeat(6, minmax(140px, 155px));
+		grid-template-rows: repeat(2, 1fr);
+	grid-template-areas: 
+	'address . subscription . .' '. socials . . .';
+	}
+	@media (min-width:967px) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 1.0rem;
+		padding: 20px 15px 40px;;
+	}
+}
+.address,
+.socials,
+.subscription{
+	font-family: Roboto;
+	font-size: 1.5rem;
+	color: white;
+	width: 100%;
+	min-width: 280px;
+	max-width: 30.0rem;
+	padding: 0.5rem 1.5rem;
+	/* border-radius: 0.5rem;
+	border: 0.2rem solid white; */
+	/* @media (max-width:720px) {
+		max-width: 295px;
+	} */
+}
+
+.text_left{
+	/* font-family: Roboto, sans-serif; */
+	font-weight: 300;
+	margin-bottom: 0.5rem;
+}
+.text{
+	text-align: right;
+	font-weight: 500;
+}
+
+.content{
+	margin-top: 1.5rem;
+	text-align: left;
+}
+.twitter,
+.linkedin,
+.facebook,
+.instagram{
+	position: relative;
+	display: inline-block;
+	width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #333;
+	fill: white;
+	transition: background-color 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@media (hover: hover) {
+	.twitter:hover,
+	.linkedin:hover,
+	.facebook:hover,
+	.instagram:hover{
+		cursor: pointer;
+		background-color: antiquewhite;
+		fill: aqua;
+	}
+	
+}
+
+.flexSocial{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+}
+
+.flexSub{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* padding: 0 4.0rem; */
+	gap: 0.5rem;
+}
+.name, .email{
+	height: 3.0rem;
+	/* align-self:self-start; */
+}
+.btnSubmit{
+	margin-top: 0.6rem;
+	cursor: pointer;
+	align-self: center;
+	width:60%;
+	height: 3.0rem;
+}
