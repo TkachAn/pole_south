@@ -5,7 +5,8 @@ import { NotFound } from "pages/NF404Page";
 import { ContactMap } from "./contacts/contacts";
 
 
-function App() {
+// function App() {
+export	const App = ()=>{
   return (
     <Routes>
       <Route path="/" element={<LayOut/>}>
@@ -16,4 +17,4 @@ function App() {
     </Routes>
   );
 };
-export default App;
+// export default App;
