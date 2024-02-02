@@ -1,15 +1,10 @@
-@import-normalize; /* bring in normalize.css styles */
+@import url(./css/_reset.css);
+@import url(./css/_fontSet.css);
+@import url(./css/_variables.css);
+@import url(./css/_colorSt.css);
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+	margin: 0 auto;
+	padding: 0 5px;
 }
