@@ -1,7 +1,7 @@
 @import url(./css/_reset.css);
 @import url(./css/_fontSet.css);
 @import url(./css/_variables.css);
-@import url(./css/_colorSt.css);
+@import url(./css/_colorSet.css);
 
 
 .container{
@@ -24,3 +24,4 @@
   } 
 
 }
+
