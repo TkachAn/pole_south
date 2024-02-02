@@ -14,8 +14,8 @@
     width: 640px;
   }
 	
-  @media (min-width: 976px) {
-    width: 976px;
+  @media (min-width: 1080px) {
+    width: 1080px;
   }
 
 	@media (min-width: 1200px) {
