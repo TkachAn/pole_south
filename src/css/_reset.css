@@ -9,8 +9,11 @@ body {
   min-height: 100%;
 }
 *,
+a,
 *::before,
-*::after {
+*::after,
+*:focus {
+  border: none;
   box-sizing: inherit;
   background-repeat: no-repeat;
   text-decoration: none;
