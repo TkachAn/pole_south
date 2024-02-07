@@ -5,7 +5,8 @@
 
 
 .container{
-	width: 32.0rem;
+	/* width: 32.0rem; */
+	width: 100svw;
 	margin: 0 auto;
 	text-align: center;
 	height: 100%;
