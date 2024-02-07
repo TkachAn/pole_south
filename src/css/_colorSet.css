@@ -1,5 +1,6 @@
 #root {
-  --colWrap: #0060a0;
+  --colWrap1: #0060a0;
+	--colWrap: #4088b8;
   --colH1: #c0d8e8;
   --colH2: #a0c4dc;
   --colH3: #90b8dc;
@@ -10,6 +11,23 @@
   --colBg: rgba(0, 96, 160, 0.99);
   --colBg1: rgba(0, 152, 240, 0.39);
 	color: var(--colBg);
+
+	--col1: #16b8bc;
+	--col2: #bbfcd5;
+	--col3: #57e3d6;
+	--col4: #24c7be;
+	--col5: #2fcce3;
+	--col6: #1a84c0;
+	--col7: #ebfdd3;
+	--col8: #f4fed3;
+	--col9: #4ae7d4;
+	--col10: #99c7cc;
+	--col11: #2cc5e0;
+	--col12: #176999;
+	--col13: #14baab;
+	--col14: #1674a1;
+	--col15: #16b8bc;
+
 }
 p{
 	color: var(--colDark);
