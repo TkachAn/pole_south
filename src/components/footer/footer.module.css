@@ -1,14 +1,28 @@
 .wrapper{
 	background-color:var(--colWrap);
+	border-top: 1rem solid var(--colH1) ;
+	/* margin: 0 auto; */
+	/* width: 100%; */
+}
+.flex{
+	display:inline-block;
+	/* @media (min-width: 640px) {
+		display: grid;
+		grid-template-columns: repeat(6, minmax(140px, 155px));
+		grid-template-rows: repeat(2, 1fr);
+	grid-template-areas: 
+	'address . subscription . .' '. socials . . .';
+	} */
+
+	@media (min-width:640px) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 1.0rem;
+		padding: 20px 15px 40px;;
+	}
 }
 
-/* .flex{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 1.0rem;
-	padding: 20px 15px 40px;
-} */
 .address{
 	grid-area: address;
 }
@@ -18,28 +32,6 @@
 .subscription{
 	grid-area: subscription;
 }
-.flex{
-	/* max-width: 100rem; */
-	display: block;
-	grid-template-columns: repeat(1, 280px);
-	gap: 40px;
-	grid-template-areas: 'address' 'socials' 'subscription';
-
-	@media (min-width: 640px) {
-		display: grid;
-		grid-template-columns: repeat(6, minmax(140px, 155px));
-		grid-template-rows: repeat(2, 1fr);
-	grid-template-areas: 
-	'address . subscription . .' '. socials . . .';
-	}
-	@media (min-width:1080px) {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		gap: 1.0rem;
-		padding: 20px 15px 40px;;
-	}
-}
 
 .address,
 .socials,
@@ -48,8 +40,8 @@
 	font-size: 1.5rem;
 	color: white;
 	width: 100%;
-	min-width: 280px;
-	max-width: 30.0rem;
+	/* min-width: 280px; */
+	max-width: 22.0rem;
 	padding: 0.5rem 1.5rem;
 	/* border-radius: 0.5rem;
 	border: 0.2rem solid white; */
@@ -74,19 +66,36 @@ font-size: 1.5rem;
 	margin-top: 1.5rem;
 	text-align: left;
 }
+.socLink{
+	fill: white;
+	min-width: 44px;
+  min-height: 44px;
+	/* display: flex;
+  align-items: center;
+  background-color: var(--headerStrDark-color);
+  fill: #fff;
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+  transition: background-color 1250ms cubic-bezier(0.4, 0, 0.1, 1),
+    fill 1550ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  border-radius: 50% 50%; */
+}
 .twitter,
 .linkedin,
 .facebook,
 .instagram{
-	position: relative;
+	padding: 0;
+	margin: 0;
+	/* position: relative; */
 	display: inline-block;
-	width: 44px;
-  height: 44px;
+	width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color:var(--colBg1);
 	fill: white;
-	transition: background-color 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+	/* transition: background-color 500ms cubic-bezier(0.075, 0.82, 0.165, 1); */
 }
+
 
 @media (hover: hover) {
 	.twitter:hover,
