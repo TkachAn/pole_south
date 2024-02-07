@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import s from './header.module.css';
+import { Logo } from 'components/logo/logo';
 
 export const Header = () => {
   const [isOpen, setOpen] = useState(false);
@@ -10,17 +11,17 @@ export const Header = () => {
         <div className={s.flex}>
           <div className={s.logo}>
             <Link to="/" end className={s.section_logo}>
-              <h3>Полюс Юг</h3>
+              <Logo/>
             </Link>
           </div>
           <section className={s.section}>
             <button className={s.burger} onClick={() => setOpen(!isOpen)}>
-              <div className={s.bar2}></div>
-              <div className={s.bar1}></div>
-              <div className={s.bar3}></div>
+              <div className={isOpen ? s.bar2O : s.bar2}></div>
+              <div className={isOpen ? s.bar1O : s.bar1}></div>
+              <div className={isOpen ? s.bar3O : s.bar3}></div>
             </button>
             <nav className={s.navigation}>
-              <ul className={isOpen ? s.burger_nav : s.flexNav}>
+              <ul className={isOpen ? s.burger_nav : s.flexNav}  onClick={() => setOpen(false)}>
                 <li className={s.nav_item}>
                   <NavLink className={s.NavLink} to="/">
                     home
