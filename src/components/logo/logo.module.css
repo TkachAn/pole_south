@@ -1,0 +1,29 @@
+.wrapper {
+  /* height: 6rem; */
+}
+.flex {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: var(--colH1);
+	width: 44px;
+}
+.h_light{
+	color: #000;
+}
+.svg {
+  background-color: coral;
+  width: 84px;
+  height: 44px;
+  fill: #6abbe3;
+  fill-opacity: 1;
+  stroke-width: 1;
+}
+/* .flex a{
+	display: block;
+	padding: 0.3rem;
+	border: 0.3rem solid var(--colH1);
+	border-radius: 50%;
+	max-height: 44px;
+	max-width: 44px;
+} */
